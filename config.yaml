@@ -1,0 +1,23 @@
+# LLM应用配置文件
+model:
+  name: "llama2"
+  max_tokens: 100
+  temperature: 0.7
+
+performance:
+  cache_size: 1000
+  batch_size: 32
+  thread_pool: 4
+
+shared_memory:
+  name: "/tmp/llm_shm"
+  size_mb: 10
+
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+
+logging:
+  level: "INFO"
+  file: "llm_app.log"
